@@ -22,6 +22,7 @@ target
 *.ipr
 *.ids
 *.orig
+application.properties
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
