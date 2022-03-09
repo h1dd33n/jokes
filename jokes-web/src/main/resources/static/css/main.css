@@ -1,0 +1,228 @@
+body, .submit-btn {
+    background-color: #d3d3d3;
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.login-container {
+    height:560px;
+    width:405px;
+    /*height: 70%;*/
+    /*width: 40%;*/
+    margin:auto;
+    padding:60px 60px;
+    background: url(https://images.theconversation.com/files/207492/original/file-20180222-152360-1o1lz54.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop) no-repeat center center #505050;
+    background-size: cover;
+    box-shadow: 0 30px 60px -5px #000;
+}
+
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tabs__label {
+    cursor: pointer;
+}
+
+.tabs__radio {
+    display: none;
+}
+
+.tabs__content {
+    order:1;
+    width:100%;
+    display:none;
+}
+
+.tabs__radio:checked + .tabs__label {
+    border-bottom: 2px solid yellow;
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+    display: initial;
+}
+
+.tabBtn {
+    padding-left: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 100;
+    border: none;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.tabBtn:hover {
+    color: #1d1d1d;
+}
+
+form {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.active {
+    border-bottom: 2px solid #ffdd00;
+}
+.tabBtn {
+    /*display: none;*/
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*.tabBtn {*/
+/*    padding-left: 0;*/
+/*}*/
+
+span {
+    text-transform: uppercase;
+    font-size: 12px;
+    /*opacity: 0.8;*/
+    display: inline-block;
+    position: relative;
+    top:-65px;
+    transition: all 0.5s ease-in-out;
+}
+
+.text {
+    /*border:none;*/
+    width:89%;
+    padding:10px 20px;
+    display: block;
+    height:15px;
+    border-radius: 20px;
+    background: rgba(255,255,255, 0.1);
+    border: 2px solid rgba(255,255,255, 0);
+    margin-top:15px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.text:focus {
+    outline:0;
+    border:2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    background: rgba(0,0,0,0);
+}
+
+.text:focus + span {
+    opacity: 0.6;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.tabBtn,span { margin-left:20px;}
+.submit-btn {
+    background-color: #ede911;
+    color: #FFF;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    height: 39px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    text-transform: uppercase;
+}
+.submit-btn:hover {
+    background: #ffc800;
+    box-shadow: 0 4px 35px -5px #ffdd00;
+    cursor: pointer;
+}
+
+.submit-btn:focus {
+    outline: none;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    top: 85px;
+    position: relative;
+}
+
+a {
+    text-align: center;
+    display: block;
+    top: 120px;
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.2);
+}
+.icons {
+    margin-top: 20px;
+    padding: 10px;
+    float:right;
+}
+
+
+@media screen and (max-width: 560px) {
+    .login-container {
+        width:300px;
+        transition: width 1s linear;
+    }
+
+}
+
+@media screen and (min-width:1601px) {
+    .login-container {
+        width: 800px;
+        height: 900px;
+        transition: width 1s linear, height 1s linear;
+    }
+    .submit-btn {
+        font-size: 25px;
+    }
+    .tabBtn {
+        font-size: 25px;
+    }
+    span {
+        font-size: 25px;
+        top:-120px;
+    }
+    .text {
+        height: 30px;
+        padding:20px 40px;
+        margin-top:50px;
+        font-size: 30px;
+    }
+    .submit-btn {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width:3200px) {
+    .login-container {
+        width: 1200px;
+        height: 800px;
+        transition: width 1s linear, height 1s linear;
+    }
+    .submit-btn {
+        font-size: 30px;
+    }
+    .tabBtn {
+        font-size: 30px;
+    }
+    span {
+        font-size: 30px;
+        top:-140px;
+    }
+    .text {
+        height: 30px;
+        padding:20px 40px;
+        margin-top:50px;
+        font-size: 30px;
+    }
+    .submit-btn {
+        height: 60px;
+    }
+}

@@ -47,7 +47,9 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.6.4</version>
                 <configuration>
-                    <mainClass>com/example/jokes/JokesApplication.java</mainClass>
+                    <mainClass>/home/name/Desktop/Java Projects/jokes/jokes-web/src/main/java/com/example/jokes/JokesApplication.java</mainClass>
+<!--                    <mainClass>com/example/jokes/JokesApplication.java</mainClass>-->
+                    <addResources>true</addResources>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

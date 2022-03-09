@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="tab">
+
+        <input type="radio" class="tabs__radio" id="tab1" checked name="radio1">
+        <label for="tab1" class="tabs__label tabBtn">Sign in</label>
+        <div class="loginForm tabs__content">
+            <form method="post">
+                <input type="email" class="text">
+                <span>Email</span>
+                <input type="password" class="text">
+                <span>password</span>
+                <input type="submit" value="Sign in" class="submit-btn">
+            </form>
+            <div class="icons">
+                <img th:src="@{icons/facebook.png}"/>
+                <img th:src="@{icons/google.png}"/>
+            </div>
+        </div>
+        <input type="radio" class="tabs__radio" id="tab2" autocomplete="off" name="radio1">
+        <label for="tab2" class="tabs__label tabBtn">Sign up</label>
+        <div class="registerForm tabs__content">
+            <form method="post">
+                <input type="text" class="text">
+                <span>first name</span>
+                <input type="text" class="text">
+                <span>last name</span>
+                <input type="email" class="text">
+                <span>email</span>
+                <input type="submit" value="Sign up" class="submit-btn">
+            </form>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
